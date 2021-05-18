@@ -3,13 +3,13 @@
 int main() {
 	//code
 //	char name[200]; 
-	int year,age;
+    int year,age;
     int strLen = 5;
     char ch;
     char* str = (char*)malloc(sizeof(char*) * strLen);
     int count = 0;
     printf("What is your name?\n");
-    do
+    do						//to accomodate unknown string
     {
         ch = getchar();
         count++;
