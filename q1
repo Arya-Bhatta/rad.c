@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+	//code
+	char name[200]; 
+	int year,age;
+	printf("What is your name?\n");
+	gets(name);
+	printf("Hello, %s!\n",name);
+	printf("What year were you born?\n");
+	scanf("%d",&year);
+	age=2021-year;
+	printf("Congratulations you are %d old!\n",age);
+	return 0;
+}
