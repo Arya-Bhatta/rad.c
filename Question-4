@@ -1,3 +1,4 @@
 1.new_data==NULL and so program will terminate.
 2.free(v);
   free(v->data); // this is wrong as first we should free v->data pointer, otherwise there will be memory leak.
+3.int new_capacity = v->capacity * 2;  // here as v->capacity==0, there will be no change.(code will not work)
