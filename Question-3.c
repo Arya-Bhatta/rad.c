@@ -19,12 +19,12 @@ int main() {
 	char x,y;
 	double temp,ans;
     printf("Enter an expression: \n");
-    scanf("%d %c %d %c %d",&a,&x,&b,&y,&c);
+    scanf("%d %c %d %c %d",&a,&x,&b,&y,&c);		//a,b,c are numbers and x,y are operators
     if((a>=0&&a<=1000)&&(b>=0&&b<=1000)&&(c>=0&&c<=1000))
     {
-        op1=check(x);
+        op1=check(x);					//check precedence
         op2=check(y);
-        if(op1>op2)
+        if(op1>op2)					//consider all cases
         {
             if(x=='*')
             {
